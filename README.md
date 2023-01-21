@@ -1,6 +1,6 @@
 Project Name - AlliRater
 
-Project Description - 
+Project Description - A website for students to rate the dining hall food for that meal.
 
 Members
 -Natalie Kwak - Front-End
