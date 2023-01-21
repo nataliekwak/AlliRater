@@ -2,7 +2,7 @@ Project Name -
 
 Project Description - 
 
-Memebers
+Members
 -Natalie Kwak - Frontend
 -Macguire McDuff - 
 -Brenda Nakasone - 
