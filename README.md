@@ -1,4 +1,9 @@
-# IntroToSWE
+Project Name - 
 
-# Hi
-hello 
+Project Description - 
+
+Memebers
+-Natalie Kwak - Frontend
+-Macguire McDuff - 
+-Brenda Nakasone - 
+-Lauren Nunag - Backend
