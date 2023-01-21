@@ -1,9 +1,9 @@
-Project Name - 
+Project Name - AlliRater
 
 Project Description - 
 
 Members
--Natalie Kwak - Frontend
--Macguire McDuff - 
--Brenda Nakasone - 
--Lauren Nunag - Backend
+-Natalie Kwak - Front-End
+-Macguire McDuff - Front-End
+-Brenda Nakasone - Back-End
+-Lauren Nunag - Back-End
