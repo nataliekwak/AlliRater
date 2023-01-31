@@ -43,6 +43,6 @@ func main() {
 	file.WriteString(food)
 	file.WriteString("Rating: ")
 	file.WriteString(userRating)
-	file.WriteString(";")
+	file.WriteString("~")
 
 }
