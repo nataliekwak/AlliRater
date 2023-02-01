@@ -20,7 +20,7 @@ Backend: Create rating system
 
 **ACCOMPLISHED**
 
-Both: 
+Both: Login Page
 
 Frontend: 
 
