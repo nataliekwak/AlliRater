@@ -4,7 +4,8 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"log"
+
+	//"log"
 	"os"
 	"strconv"
 	"strings"
@@ -31,18 +32,28 @@ func main() {
 	//Back end
 	fmt.Printf("\n Thanks for rating %v with %v star rating.\n\n Your rating was recorded in our system at %v", food, mynumRating, time.Now().Format(time.Stamp))
 
-	//writing ratings to data.txt
-	file, err := os.OpenFile("./data.txt", os.O_APPEND|os.O_WRONLY, 0644)
+	//attempting to write to a file
+	/*
+		file, err := os.Create("./data.txt")
 
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer file.Close()
+		if err != nil {
+			log.Fatal(err)
+		}
 
-	file.WriteString("Meal: ")
-	file.WriteString(food)
-	file.WriteString("Rating: ")
-	file.WriteString(userRating)
-	file.WriteString("~")
+		defer file.Close()
 
+		file.WriteString("Writing a single line. \n")
+
+		linesToWrite := []string{"Writing multiple lines", "one after the other", "using a string slice."}
+
+}
+
+// class for rating system
+type RatingSystem struct {
+	//food item
+	//date - calendar interface?
+	//student object?
+	//rating
+	//name
+	//
 }
