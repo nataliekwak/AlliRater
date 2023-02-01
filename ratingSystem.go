@@ -46,13 +46,3 @@ func main() {
 	file.WriteString("~")
 
 }
-
-// class for rating system
-type RatingSystem struct {
-	//food item
-	//date - calendar interface?
-	//student object?
-	//rating
-	//name
-	//
-}
