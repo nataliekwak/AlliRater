@@ -10,7 +10,7 @@ Frontend: Design web server
 Backend: Create rating system
 
 **ACCOMPLISHED**
-Both: 
+Both: login page yay!
 Frontend: 
 Backend: Created rating system and wrote it to file
 
