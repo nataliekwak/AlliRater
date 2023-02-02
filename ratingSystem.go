@@ -4,7 +4,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-
 	"log"
 	"os"
 	"strconv"
@@ -12,7 +11,65 @@ import (
 	"time"
 )
 
+/*
+func CORS(next http.Handler) http.Handler {
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// set headers
+        (w).Header().Set("Access-Control-Allow-Origin", "*")
+		(w).Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
+        (w).Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+        if r.Method == "OPTIONS" {
+			w.WriteHeader(http.StatusOK)
+			return
+        }
+        fmt.Println("ok")
+        next.ServeHTTP(w, r)
+		return
+	})
+}
+
+func loginHandler(w http.ResponseWriter, r *http.Request) {
+	if r.Method != "POST" {
+		w.WriteHeader(400) // bad request
+		return
+    }
+    // get the body of the POST request
+	reqBody, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		log.Printf("Error reading post body: %v", err)
+		w.WriteHeader(500) // internal server error
+		return
+    }
+    // try to parse the body
+	var login Login
+	if err = json.Unmarshal(reqBody, &login); err != nil {
+		log.Printf("Error parsing body: %v", err)
+		w.WriteHeader(400) // bad request
+		return
+    }
+    // Do the login comparison
+	ok, err := validateCreds(login)
+	if err != nil {
+		log.Printf("Login internal server error: %v", err)
+		w.WriteHeader(500) // Internal server error
+		return
+	}
+	if !ok {
+		log.Printf("Invalid username or password")
+		w.WriteHeader(401) // unauthorized
+    }
+
+    w.WriteHeader(200)
+}
+*/
+
 func main() {
+	/*
+			r := mux.NewRouter()
+		    r.HandleFunc("/login", loginHandler)
+		    r.handle("/", r)
+		    log.Fatal(http.ListenAndServe(":10000", nil))*/
+
 	var food string
 	var userRating string
 
