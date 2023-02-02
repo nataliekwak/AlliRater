@@ -5,8 +5,8 @@ Introduction to Software Engineering Semester Project
 
 **INSTALLATION INSTRUCTIONS**
 
-'''
+```
 npm install @angular/cli -g
 
 ng add @angular/material
-'''
+```
