@@ -2,4 +2,6 @@ Meal: spaghetti
 Rating: 4
 ;Meal: Sandwich
 Rating: 2
+~Meal: Hamburger
+Rating: 5
 ~
