@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class LogInComponent {
 
-  constructor(){
-    username:"Admin";
-    password:"Admin"
-  }
-
 }
