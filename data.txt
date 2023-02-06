@@ -4,4 +4,8 @@ Rating: 4
 Rating: 2
 ~Meal: Hamburger
 Rating: 5
+~Meal: spaghetti
+Rating: 4
+~Meal: ramen
+Rating: 10
 ~
