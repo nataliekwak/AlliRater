@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-log-in',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./log-in.component.css']
 })
 export class LogInComponent {
+
+  constructor(private router: Router){
+    
+  }
+
+  onSubmit(){
+    this.router.navigate(['homepage'])
+  }
 
 }
