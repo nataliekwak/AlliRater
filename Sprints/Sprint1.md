@@ -22,11 +22,12 @@ Backend: Create rating system
 
 Both: Login Page
 
-Frontend: 
+Frontend: Designed web server with buttons and different pages 
 
-Backend: Created rating system and wrote it to file
+Backend: Created rating system and wrote it to file, created temporary login by writing to a file 
 
 ---------------
 **ISSUES**
-- could not install gorilla mux 
-- having issues integrating go api with angular server 
+- could not install gorilla mux (in progress)
+- having issues integrating go api with angular server (in progress)
+- had issues working with strings in go (fixed)
