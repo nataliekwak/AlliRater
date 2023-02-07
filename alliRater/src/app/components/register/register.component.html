@@ -6,13 +6,16 @@
       <form class="example-form">
         <mat-card-content>
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Username">
+            <input matInput placeholder="Username" [formControl]="user" required>
+            <mat-error *ngIf="user.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Email">
+            <input matInput placeholder="Email" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Password">
+            <input matInput placeholder="Password" [formControl]="pass" required>
+            <mat-error *ngIf="pass.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </mat-card-content>
         <button mat-stroked-button color="accent" class="btn-block">Register</button>
