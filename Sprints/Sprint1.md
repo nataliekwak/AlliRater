@@ -28,6 +28,6 @@ Backend: Created rating system and wrote it to file, created temporary login by 
 
 ---------------
 **ISSUES**
-- could not install gorilla mux (in progress)
-- having issues integrating go api with angular server (in progress)
-- had issues working with strings in go (fixed)
+- could not install gorilla mux (in progress) not really sure why, we are following the steps may be something with the version of gorilla mux or vscode
+- having issues integrating go api with angular server (in progress), has to do with gorilla mux i believe 
+- had issues working with strings in go (fixed), theres like 3 different ways to take input in golang, seems excessive to me tbh
