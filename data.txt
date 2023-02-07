@@ -10,4 +10,6 @@ Rating: 4
 Rating: 10
 ~Meal: sandwich
 Rating: 4
+~Meal: salad
+Rating: 1
 ~

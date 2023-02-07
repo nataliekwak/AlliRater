@@ -12,59 +12,61 @@ import (
 )
 
 func main() {
-	//var valid bool
-	register()
+	var choice string
+	fmt.Println("Would you like to register[button] or login[button]?")
+	fmt.Scanln(&choice)
 
-	valid := false
-
-	reader := bufio.NewReader(os.Stdin)
-	fmt.Println("Enter username: ")
-	username, _ := reader.ReadString('\n')
-	username = strings.Replace(username, "\n", "", -1)
-
-	reader = bufio.NewReader(os.Stdin)
-	fmt.Println("Enter password: ")
-	password, _ := reader.ReadString('\n')
-
-	file, err := os.Open("login.txt")
-	if err != nil {
-		fmt.Println("File reading error", err)
-		return
+	if choice == "register" {
+		register()
 	}
-	defer file.Close()
 
-	var temp string
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		temp = scanner.Text()
-		fmt.Println("this is temp: ", temp)
-		fmt.Println("this is username: ", username)
-		if temp == username {
-			fmt.Println("W")
-		} else {
-			fmt.Println("L")
+	if choice == "login" {
+		valid := false
+
+		var username string
+		fmt.Println("Enter username: ")
+		fmt.Scanln(&username)
+
+		var password string
+		fmt.Println("Enter password: ")
+		fmt.Scanln(&password)
+
+		file, err := os.Open("login.txt")
+		if err != nil {
+			fmt.Println("File reading error", err)
+			return
 		}
-		fmt.Println(fmt.Sprint(strings.Compare(temp, username)))
-		//temp = strings.Replace(temp, "\n", "", -1)
+		defer file.Close()
 
-		if valid {
-			if temp == password {
-				fmt.Println("Login successful!")
-			} else {
-				fmt.Println("Wrong password.")
-				break
+		var temp string
+		scanner := bufio.NewScanner(file)
+		for scanner.Scan() {
+			temp = scanner.Text()
+
+			if valid {
+				if temp == password {
+					fmt.Println("Login successful!")
+					break
+				} else {
+					fmt.Println("Wrong password.")
+					break
+				}
+			}
+			if strings.Compare(temp, username) == 0 {
+				valid = true
 			}
 		}
-		if strings.Compare(temp, username) == 0 {
-			valid = true
-			fmt.Println(temp)
+		if err := scanner.Err(); err != nil {
+			fmt.Println("File reading error", err)
 		}
-	}
-	if err := scanner.Err(); err != nil {
-		fmt.Println("File reading error", err)
-	}
 
-	rating()
+		if !valid {
+			fmt.Println("Wrong username.")
+			os.Exit(0)
+		}
+
+		rating()
+	}
 }
 
 func register() {
@@ -123,5 +125,4 @@ func rating() {
 	file.WriteString("Rating: ")
 	file.WriteString(userRating)
 	file.WriteString("~")
-
 }
