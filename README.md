@@ -1,4 +1,5 @@
-Introduction to Software Engineering Semester Project
+Introduction to Software Engineering Semester Project: Allirater
+
 - Natalie Kwak, Macguire McDuff, Brenda Nakasone, Lauren Nunag
 
 -----------------------------
