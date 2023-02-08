@@ -12,4 +12,6 @@ Rating: 10
 Rating: 4
 ~Meal: salad
 Rating: 1
+~Meal: lasagna
+Rating: 5
 ~
