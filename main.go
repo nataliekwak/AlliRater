@@ -18,9 +18,7 @@ func main() {
 
 	if choice == "register" {
 		register()
-	}
-
-	if choice == "login" {
+	} else if choice == "login" {
 		valid := false
 
 		var username string
@@ -49,6 +47,7 @@ func main() {
 					break
 				} else {
 					fmt.Println("Wrong password.")
+					os.Exit(0) //added to exit program before asking to rate meal
 					break
 				}
 			}
@@ -61,11 +60,13 @@ func main() {
 		}
 
 		if !valid {
-			fmt.Println("Wrong username.")
+			fmt.Println("Username does not exist.")
 			os.Exit(0)
 		}
 
 		rating()
+	} else {
+		fmt.Println("Please type one of the choices above. Try again.")
 	}
 }
 
@@ -80,7 +81,7 @@ func register() {
 	fmt.Println("Please enter password")
 	pass, _ = reader.ReadString('\n')
 
-	fmt.Println("Thanks for registering as a user with AlliRater")
+	fmt.Println("Thanks for registering as a user with AlliRater!")
 
 	file, err := os.OpenFile("./login.txt", os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
