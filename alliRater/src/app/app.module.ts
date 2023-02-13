@@ -14,6 +14,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { LogInComponent } from './components/log-in/log-in.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { RouterModule } from '@angular/router' //added for login
 
 @NgModule({
   declarations: [
@@ -31,7 +32,21 @@ import { HomePageComponent } from './components/home-page/home-page.component';
     AngularMaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: HomePageComponent
+      },
+      {
+        path:'log-in',
+        component: LogInComponent
+      },
+      {
+        path: 'admin',
+        component: RegisterComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -81,7 +81,7 @@ func register() {
 	fmt.Println("Please enter password")
 	pass, _ = reader.ReadString('\n')
 
-	fmt.Println("Thanks for registering as a user with AlliRater!")
+	fmt.Println("Thanks for registering as a user with AlliRater")
 
 	file, err := os.OpenFile("./login.txt", os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
