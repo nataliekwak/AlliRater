@@ -5,15 +5,20 @@
       </mat-card-header>
       <form class="example-form">
         <mat-card-content>
+          <!--Username field-->
           <mat-form-field class="example-full-width">
             <input matInput placeholder="Username" [formControl]="user" required>
             <mat-error *ngIf="user.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
+
+          <!--Password field-->
           <mat-form-field class="example-full-width">
             <input matInput placeholder="Password" [formControl]="pass" required>
             <mat-error *ngIf="user.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </mat-card-content>
+
+        <!--Login button-->
         <button mat-stroked-button color="accent" class="btn-block">Log in</button>
       </form>
     </mat-card>
