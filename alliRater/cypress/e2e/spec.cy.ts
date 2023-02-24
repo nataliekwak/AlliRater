@@ -1,11 +1,11 @@
 describe('My First Test', () => {
-  it('Visits the Kitchen Sink', () => {
-    cy.visit('https://example.cypress.io')
+  it('Visits the Homepage', () => {
+    cy.visit('http://localhost:4200/')
 
-    cy.contains('type').click()
+    cy.contains('Homepage').click()
 
     // Should be on a new URL which
     // includes '/commands/actions'
-    cy.url().should('include', '/commands/actions')
+    cy.url().should('include', '/homepage')
   })
 })
