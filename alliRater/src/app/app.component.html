@@ -66,6 +66,7 @@
       </li>
     </ul>
 
+    <!-- If user is not logged in, give options to login or register -->
     <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
       <li class="nav-item">
         <a href="/register" color="#FFFFFF" class="nav-link" routerLink="register">Sign Up</a>
@@ -75,6 +76,7 @@
       </li>
     </ul>
 
+    <!-- If user is logged in, give option to view profile or sign out -->
     <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
       <li class="nav-item">
         <a href="/profile" color="#FFFFFF" class="nav-link" routerLink="profile">{{ username }}</a>
