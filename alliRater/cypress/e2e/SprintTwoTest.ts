@@ -5,7 +5,7 @@ describe('Sprint 2 First Test', () => {
     cy.contains('Homepage').click()
 
     // Should be on a new URL which
-    // includes '/commands/actions'
+    // includes '/homepage'
     cy.url().should('include', '/homepage')
   })
 })
