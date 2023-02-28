@@ -67,7 +67,11 @@
               "browserTarget": "alliRater:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "browserTarget": "appname:build",
+            "proxyConfig": "proxy.conf.json"
+           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
