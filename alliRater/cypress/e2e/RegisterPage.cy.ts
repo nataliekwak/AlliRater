@@ -5,7 +5,7 @@ describe('Register Page Test', () => {
     cy.contains('Sign Up').click()
 
     // Should be on a new URL which
-    // includes '/homepage'
+    // includes '/register'
     cy.url().should('include', '/register')
   })
 })
