@@ -9,10 +9,6 @@ li{display:inLine;}
     justify-content: space-evenly;
 }
 
-.example-card {
-    max-height: 50px;
-  }
-
 .example-header-image {
     background-image: url(AlliraterLogo.jpg);
     background-size: 3;
