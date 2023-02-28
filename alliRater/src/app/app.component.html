@@ -50,12 +50,8 @@
 
 <div id="app">
   <mat-toolbar color="primary" class="app-header navbar navbar-expand ">
-    <a href="#" class="navbar-brand">AlliRater</a>
-    <img mat-card-image src="AlliraterLogo.jpg" alt="Allirater">
+    <a href="#" class="navbar-brand"><img mat-card-image src="AlliraterLogo.jpg" alt="Allirater"></a>
     <ul class="navbar-nav mr-auto nav-tool-items" routerLinkActive="active">
-      <li class="nav-item">
-        <a href="/home" color="#FFFFFF" class="nav-link" routerLink="homepage">Home </a>
-      </li>
       <li class="nav-item" *ngIf="showAdminBoard">
         <a href="/admin" color="#FFFFFF" class="nav-link" routerLink="admin">Admin Board</a>
       </li>

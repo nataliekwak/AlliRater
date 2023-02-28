@@ -10,10 +10,10 @@ li{display:inLine;}
 }
 
 .example-card {
-    max-width: 400px;
+    max-height: 50px;
   }
-  
+
 .example-header-image {
     background-image: url(AlliraterLogo.jpg);
-    background-size: cover;
+    background-size: 3;
   }
