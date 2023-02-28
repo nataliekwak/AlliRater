@@ -9,7 +9,7 @@ import { BoardModeratorComponent } from './components/board-moderator/board-mode
 import { BoardAdminComponent } from './components/board-admin/board-admin.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'login' },
+  { path: '', pathMatch: 'full', redirectTo: 'homepage' },
   { path: 'login', component: LogInComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'homepage', component: HomePageComponent},

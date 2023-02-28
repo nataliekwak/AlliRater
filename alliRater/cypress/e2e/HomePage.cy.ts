@@ -1,4 +1,4 @@
-describe('Sprint 2 First Test', () => {
+describe('Homepage Test', () => {
   it('Visits the Homepage', () => {
     cy.visit('http://localhost:4200/')
 
