@@ -3,11 +3,12 @@
 </head>
 
 <!-- Toolbar -->
+<!--
 <mat-toolbar color="primary" class="app-header">
   <div><a>AlliRater</a></div>
   <span class="nav-tool-items">
-    <!--<a mat-button routerLink="login" routerLinkActive="active">Log in</a>-->
-    <!--<a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>-->
+    cmt <a mat-button routerLink="login" routerLinkActive="active">Log in</a>
+    cmt <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
     
     <ul class="navbar-nav mr-auto flex-container" routerLinkActive="active">
       <li class="nav-item">
@@ -24,7 +25,7 @@
       </li>
     </ul>
 
-    <!-- If user is not logged in, give options to login or register-->
+    cmt If user is not logged in, give options to login or register
     <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
       <li class="nav-item">
         <a mat-button href="/register" class="nav-link" routerLink="register">Sign Up</a>
@@ -34,7 +35,7 @@
       </li>
     </ul>
 
-    <!-- If user is logged in, give option to view profile or sign out-->
+    cmt If user is logged in, give option to view profile or sign out
     <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
       <li class="nav-item">
         <a mat-button href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
@@ -44,6 +45,48 @@
       </li>
     </ul>
   </span>
-</mat-toolbar>
+</mat-toolbar> 
+-->
+
+<div id="app">
+  <mat-toolbar color="primary" class="app-header navbar navbar-expand ">
+    <a href="#" class="navbar-brand"><img mat-card-image src="AlliraterLogo.jpg" alt="Allirater"></a>
+    <ul class="navbar-nav mr-auto nav-tool-items" routerLinkActive="active">
+      <li class="nav-item" *ngIf="showAdminBoard">
+        <a href="/admin" color="#FFFFFF" class="nav-link" routerLink="admin">Admin Board</a>
+      </li>
+      <li class="nav-item" *ngIf="showModeratorBoard">
+        <a href="/mod" color="#FFFFFF" class="nav-link" routerLink="mod">Moderator Board</a>
+      </li>
+      <li class="nav-item">
+        <a href="/user" color="#FFFFFF" class="nav-link" *ngIf="isLoggedIn" routerLink="user">User</a>
+      </li>
+    </ul>
+
+    <!-- If user is not logged in, give options to login or register -->
+    <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+      <li class="nav-item">
+        <a href="/register" color="#FFFFFF" class="nav-link" routerLink="register">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a href="/login" color="#FFFFFF" class="nav-link" routerLink="login">Login</a>
+      </li>
+    </ul>
+
+    <!-- If user is logged in, give option to view profile or sign out -->
+    <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+      <li class="nav-item">
+        <a href="/profile" color="#FFFFFF" class="nav-link" routerLink="profile">{{ username }}</a>
+      </li>
+      <li class="nav-item">
+        <a href color="#FFFFFF" class="nav-link" (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </mat-toolbar>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
 <router-outlet></router-outlet>

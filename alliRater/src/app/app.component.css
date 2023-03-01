@@ -1,6 +1,15 @@
+a {
+    color: white;
+}
+
 li{display:inLine;}
 
 .flex{
     display:flex;
     justify-content: space-evenly;
 }
+
+.example-header-image {
+    background-image: url(AlliraterLogo.jpg);
+    background-size: 3;
+  }
