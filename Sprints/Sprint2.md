@@ -11,6 +11,8 @@ List unit tests and Cypress test for frontend
 
 List unit tests for backend
 ---
+- Our unit tests check to see if there has been an item added to the feed. For now, these tests should fail because we have not added a feature to add posts to the feed yet. 
+
 
 Add documentation for your backend API
 ---
