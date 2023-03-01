@@ -15,8 +15,8 @@ List unit tests for backend
 
 
 Add documentation for your backend API
+---
 
-**Backend API Documentation**
 - Updated main.go to include rest API to use HTTP requests. listen and serve on local host
     - Created reference to gin router that uses Get request
     - Ensures endpoints listening and waiting for requests
