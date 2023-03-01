@@ -1,6 +1,6 @@
 Detail work you've completed in Sprint 2
 ---
-- Frontend: 
+- Frontend: Implemented full functionality of the login, sign up, and homepage. Generated a logo and linked it as a button to the homepage. Added skeletons for future implementation of admin and user roles with seperate functionality and access for each.
 
 - Backend: Created REST api and integrated front end with backend. Created unit tests. 
 
