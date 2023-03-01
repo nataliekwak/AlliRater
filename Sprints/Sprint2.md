@@ -24,6 +24,8 @@ Add documentation for your backend API
 - Define interfaces within main.go that will return a slice of items and get all items
     - Will be used to integrate database
     - Used as function parameters
-- References for creating REST API
+- References for creating REST API and integrating angular
     - https://youtu.be/LOn1GUsjOF4
+    - 
+
 
