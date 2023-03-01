@@ -69,8 +69,8 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "browserTarget": "appname:build",
-            "proxyConfig": "proxy.conf.json"
+            "browserTarget": "alliRater:build",
+            "proxyConfig": "proxyconfig.json"
            }
         },
         "extract-i18n": {
