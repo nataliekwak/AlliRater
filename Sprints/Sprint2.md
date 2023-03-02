@@ -6,7 +6,11 @@ Detail work you've completed in Sprint 2
 
 List unit tests and Cypress test for frontend
 ---
-- Cypress Test - Clicks the homepage button in the top left corner and then verifies that it has visited the homepage.
+- Cypress Test's - 
+
+1. Scans and clicks the sign up button in the top left of the homepage and verifies that the user has visited the register page
+
+2. Scans and clicks the log in button in the top left of the homepage and verifies that the user has visted the log in page
 
 
 List unit tests for backend
