@@ -4,7 +4,7 @@ Connected go backend to database that can use and handle SQL queries
 
 Established working login
 
-Created a password auhentication function for the login page
+Created a password authentication function for the login page that encrypts and decrypts user passwords making them undetectable to us as admins and any potential threats on security
 
 --List frontend unit tests
 
