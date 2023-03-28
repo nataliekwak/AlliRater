@@ -11,5 +11,3 @@ Members:
 -Brenda Nakasone - Back-End
 
 -Lauren Nunag - Back-End
-
-
