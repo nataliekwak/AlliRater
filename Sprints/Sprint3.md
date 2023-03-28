@@ -30,3 +30,11 @@ Created a password authentication function for the login page that encrypts and 
     - Used as function parameters
 - References for creating REST API
     - https://youtu.be/LOn1GUsjOF4
+
+Sprint 3 Backend Documentation:
+- Implemented fiber framework to run server
+    - Connected to database using MySQL Workbench and GORM
+- Created and organized packages into folders
+    - Includes controllers, databases, models, and routes
+- Implemented Postman to send requests
+- Created register users function
