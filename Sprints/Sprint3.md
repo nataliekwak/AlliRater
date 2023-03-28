@@ -37,4 +37,17 @@ Sprint 3 Backend Documentation:
 - Created and organized packages into folders
     - Includes controllers, databases, models, and routes
 - Implemented Postman to send requests
-- Created register users function
+- Created users
+    - Register users function
+    - Users struct to store each user's information
+- Installed go realize package to add listener every time changes are made
+- Added migrations using GORM
+- Hashed password with bcrypt go package
+- Login Function
+    - Uses post requests
+    - Sends message if user not found or incorrect password
+- Created/generated JWT token with secret key
+    - Stored token into cookie
+- Added logout function
+    - Created cookie and post request
+- Implemented middleware functions to increase efficiency
