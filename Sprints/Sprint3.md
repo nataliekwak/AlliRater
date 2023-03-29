@@ -6,12 +6,18 @@ Established working login
 
 Created a password authentication function for the login page that encrypts and decrypts user passwords making them undetectable to us as admins and any potential threats on security
 
+
+
 **List frontend unit tests**
+
+
 
 
 **List backend unit tests**
 - Tests Register function located in authController.go that registers a user to the database
 - Tests CreateUser function located in userController.go which ensures that a user is successfully created
+
+
 
 **Show updated documentation for your backend API**
 
