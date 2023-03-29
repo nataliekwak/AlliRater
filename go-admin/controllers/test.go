@@ -3,6 +3,7 @@ package controllers
 import (
 	"fmt"
 	"go-admin/database"
+	"go-admin/middlewares"
 	"go-admin/models"
 
 	"github.com/gofiber/fiber/v2"
@@ -40,4 +41,28 @@ func RegisterTest(c *fiber.Ctx) error {
 	}
 
 	return nil
+}
+
+func CreateUserTest(c *fiber.Ctx) error {
+	if err := middlewares.IsAuthorized(c, "users"); err != nil {
+		return err
+	}
+
+	var user models.User
+
+	if err := c.BodyParser(&user); err != nil {
+		return err
+	}
+
+	user.SetPassword("1234")
+
+	database.DB.Create(&user)
+
+	if user != nil {
+		fmt.Println("Did not create user")
+	} else {
+		fmt.Println("Successfully created user")
+	}
+
+	return c.JSON(user)
 }
