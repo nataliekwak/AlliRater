@@ -1,4 +1,4 @@
---Detail work you've completed in Sprint 3
+**Detail work you've completed in Sprint 3**
 
 Connected go backend to database that can use and handle SQL queries
 
@@ -6,14 +6,14 @@ Established working login
 
 Created a password authentication function for the login page that encrypts and decrypts user passwords making them undetectable to us as admins and any potential threats on security
 
---List frontend unit tests
+**List frontend unit tests**
 
 
---List backend unit tests
+**List backend unit tests**
 - Tests Register function located in authController.go that registers a user to the database
 - Tests CreateUser function located in userController.go which ensures that a user is successfully created
 
---Show updated documentation for your backend API 
+**Show updated documentation for your backend API**
 
 Sprint 3 Backend Documentation:
 - Implemented fiber framework to run server
@@ -26,6 +26,8 @@ Sprint 3 Backend Documentation:
     - Users struct to store each user's information
     - Roles model creates new table in database with role information
     - Permissions model gives functions to view and edit users/items
+- Created entity, order, paginate, permission models
+    - Gives information about food item (quantity, name, etc.)
 - Installed go realize package to add listener every time changes are made
 - Added migrations using GORM
 - Hashed password with bcrypt go package
@@ -37,9 +39,14 @@ Sprint 3 Backend Documentation:
 - Added logout function
     - Created cookie and post request
 - Implemented middleware functions to increase efficiency
+    - Handles permissions allowing for view and edit access
+    - Secures routes with authorization for certain users
 - Paginated users to limit the number of users per page
     - Keeps track of total pages, current, and last page
 - Created functions to allow user email/password to be updated
 - Product (food items) controller that allows addition of items to database
     - Includes title, description, image, and price (tentative)
+- Created function that exports data as a CSV file
+    - Includes name, email, item, price, quantity
+- Executed SQL query to format chart with database information by date
 
