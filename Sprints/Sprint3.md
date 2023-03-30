@@ -1,5 +1,6 @@
 **Detail work you've completed in Sprint 3**
 
+
 Connected go backend to database that can use and handle SQL queries
 
 Established working login
@@ -11,15 +12,25 @@ Created a password authentication function for the login page that encrypts and 
 **List frontend unit tests**
 
 
+-The designated homepage will be examined for the presence and visibility of the dashboard button. An assessment of the website's layout will be conducted to ensure that the button is prominently displayed and easily identifiable
+
+-Upon confirming the presence of the dashboard button, it will be tested for functionality by clicking on it. The dashboard page will be thoroughly analyzed to ensure that any updates made to the homepage are promptly displayed, as expected. It will verify that the updated dashboard page’s url is ‘/#’
+
+-The login page will be accessed to confirm its presence and accessibility. It will be verified that the login page's URL is '/login'
+
+-The register page will be accessed to confirm its presence and accessibility. It will be verified that the register page's URL is '/register'
 
 
 **List backend unit tests**
+
+
 - Tests Register function located in authController.go that registers a user to the database
 - Tests CreateUser function located in userController.go which ensures that a user is successfully created
 
 
 
 **Show updated documentation for your backend API**
+
 
 Sprint 3 Backend Documentation:
 - Implemented fiber framework to run server
@@ -55,4 +66,3 @@ Sprint 3 Backend Documentation:
 - Created function that exports data as a CSV file
     - Includes name, email, item, price, quantity
 - Executed SQL query to format chart with database information by date
-
