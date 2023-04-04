@@ -5,6 +5,7 @@ import (
 	"go-admin/models"
 	"go-admin/util"
 
+	"fmt"
 	"strconv"
 	"time"
 
@@ -53,6 +54,7 @@ func Login(c *fiber.Ctx) error {
 	var user models.User
 
 	database.DB.Where("email = ?", data["email"]).First(&user)
+	fmt.Println(user.Id)
 
 	// If user is not found...
 	if user.Id == 0 {
@@ -84,6 +86,8 @@ func Login(c *fiber.Ctx) error {
 		Value:    token,
 		Expires:  time.Now().Add(time.Hour * 24),
 		HTTPOnly: true,
+		SameSite: "None",
+		Secure:   false,
 	}
 
 	c.Cookie(&cookie)

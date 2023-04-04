@@ -17,6 +17,8 @@ func main() {
 	// Browser blocks requests from different ports
 	app.Use(cors.New(cors.Config{
 		AllowCredentials: true,
+		AllowOrigins:     "http://localhost:4200",
+		AllowHeaders:     "Origin, Content-Type, Accept, Accept-Language, Content-Length",
 	}))
 
 	routes.Setup(app)
