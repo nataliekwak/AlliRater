@@ -16,5 +16,12 @@ export class NavComponent implements OnInit{
   ngOnInit(): void {
     this.authService.user().subscribe(user => this.user = user);
   }
+
+  logout(): void{
+    this.authService.logout().subscribe(()=>{
+      console.log('success');
+    });
+
+  }
   
 }
