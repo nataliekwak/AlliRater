@@ -13,7 +13,8 @@ import { StarRatingComponent } from '../public/star-rating/star-rating.component
     StarRatingComponent,
     NavComponent,
     MenuComponent,
-    SecureComponent
+    SecureComponent,
+
   ],
   imports: [
     CommonModule,

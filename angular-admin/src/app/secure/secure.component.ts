@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../services/auth.service';
 import {Router} from '@angular/router';
 import {User} from'../interfaces/user';
+import { Star } from '../interfaces/star';
 
 @Component({
   selector: 'app-secure',
@@ -10,6 +11,8 @@ import {User} from'../interfaces/user';
 })
 export class SecureComponent implements OnInit{
   user: User;
+  star: Star;
+  stars: Star[];
   constructor(
     private authService: AuthService,
     private router: Router
@@ -20,6 +23,10 @@ export class SecureComponent implements OnInit{
       user => this.user = user,
       err => this.router.navigate(['/login'])
     );
+  }
+
+  selectStar(id: any) {
+    id = 0
   }
 
 }
