@@ -7,12 +7,11 @@
     transform: scale(1);
 }
 
-.star{
-    mat-card:
-        width: 40px;
-        height: 40px;
-    
-}
+.star
+  mat-icon{
+    width: 40px;
+    height: 40px;
+  }
 
 .star-gold{
     color: orange;

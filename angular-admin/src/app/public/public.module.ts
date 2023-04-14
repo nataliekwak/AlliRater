@@ -5,7 +5,6 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { StarRatingComponent } from './star-rating/star-rating.component';
 
 
 
@@ -13,8 +12,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
   declarations: [
     PublicComponent,
     LoginComponent,
-    RegisterComponent,
-    StarRatingComponent
+    RegisterComponent
   ],
   imports: [
     CommonModule,

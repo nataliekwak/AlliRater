@@ -1,10 +1,12 @@
 <app-nav [user]="user"></app-nav>
 
+
 <!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="secure.component.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style type="text/css">
 body {
 	margin:10px;
@@ -44,6 +46,9 @@ h2, p  {
 <body>
 <div id="box1">
 	<h2>Example 1</h2>
+	<div *ngFor="let star of stars" [ngClass]="[star.class]" (click)="selectStar(star.id)">
+		<mat-icon>{{star.icon}}</mat-icon>
+	</div>
 </div>
 </body>
 </html>
