@@ -6,12 +6,15 @@ import { RegisterComponent } from './public/register/register.component';
 import { SecureComponent } from './secure/secure.component';
 import { ProfileComponent } from './secure/profile/profile.component';
 import { DashboardComponent } from './secure/dashboard/dashboard.component';
+import { UsersComponent } from './secure/users/users.component';
 
 const routes: Routes = [
   {path: '', component: SecureComponent,
 children: [
-  {path: '', component: DashboardComponent},
-  {path: 'profile', component: ProfileComponent}
+  {path:'', redirectTo: '/dashboard', pathMatch: 'full'},
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'profile', component: ProfileComponent},
+  {path: 'users', component: UsersComponent}
 ]},
   {path: '', 
     component: PublicComponent,

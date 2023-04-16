@@ -7,6 +7,8 @@ import { RouterModule } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UsersComponent } from './users/users.component';
+//import { ProductsComponent } from './products/products.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MenuComponent,
     SecureComponent,
     ProfileComponent,
-    DashboardComponent
+    DashboardComponent,
+    UsersComponent,
+    //ProductsComponent
   ],
   imports: [
     CommonModule,
