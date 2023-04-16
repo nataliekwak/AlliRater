@@ -3,6 +3,10 @@
 
 <!DOCTYPE HTML>
 <html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="secure.component.css">
@@ -64,10 +68,19 @@ h2, p  {
 <body>
 <div id="box1">
 	<h2>Gator Corner Dining</h2>
+	<form>
+	<label for="gdRating">Rating (between 1 and 5):</label>
+	<input type="number" id="gdRating" name="gdRrating" min="1" max="5">
+  </form>
 </div>
 
 <div id="box2">
 	<h2>Broward Dining Hall</h2>
+	<form>
+	<label for="bRating">Rating (between 1 and 5):</label>
+	<input type="number" id="bRating" name="bRating" min="1" max="5">
+  </form>
 </div>
 </body>
 </html>
+
