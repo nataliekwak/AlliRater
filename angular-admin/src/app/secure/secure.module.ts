@@ -5,6 +5,7 @@ import { MenuComponent } from './menu/menu.component';
 import { SecureComponent } from './secure.component';
 import { RouterModule } from '@angular/router';
 import { StarRatingComponent } from '../public/star-rating/star-rating.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +18,8 @@ import { StarRatingComponent } from '../public/star-rating/star-rating.component
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   exports: [
     StarRatingComponent

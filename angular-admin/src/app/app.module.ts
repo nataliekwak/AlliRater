@@ -9,6 +9,7 @@ import { PublicComponent } from './public/public.component';
 import { PublicModule } from './public/public.module';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { CredentialInterceptor } from './interceptors/credential.interceptor';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CredentialInterceptor } from './interceptors/credential.interceptor';
     AppRoutingModule,
     SecureModule,
     PublicModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

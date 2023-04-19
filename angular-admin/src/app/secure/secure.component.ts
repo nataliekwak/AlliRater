@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../services/auth.service';
 import {Router} from '@angular/router';
 import {User} from'../interfaces/user';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-secure',
@@ -10,10 +12,16 @@ import {User} from'../interfaces/user';
 })
 export class SecureComponent implements OnInit{
   user: User;
+  
   constructor(
     private authService: AuthService,
     private router: Router
     ){ }
+
+    templateForm(value: any) {
+      console.log(value);
+      alert(JSON.stringify(value));
+    }
 
   ngOnInit(): void{
     this.authService.user().subscribe(
@@ -21,5 +29,7 @@ export class SecureComponent implements OnInit{
       err => this.router.navigate(['/login'])
     );
   }
+
+  
 
 }
