@@ -38,9 +38,7 @@ export class DashboardComponent implements OnInit{
       console.log(value);
       //alert(JSON.stringify(value));
       this.value2 = JSON.stringify(value);
-      console.log(this.value2)
       this.value2 = this.value2.substring(10,11)
-      console.log(this.value2)
       this.sum2 += Number(this.value2)
       this.count2 += 1;
       this.value2 = JSON.stringify(this.sum2/this.count2)
