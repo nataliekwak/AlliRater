@@ -3,6 +3,10 @@
 
 <!DOCTYPE HTML>
 <html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="secure.component.css">
@@ -21,7 +25,18 @@ body {
 }
 
 #box1 {
-	background:	#ffc0cb;
+	background:	#6070ff;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 50em;
+  min-height: 25em;
+  position: relative;
+}
+
+#box2 {
+	background:	#ffaf47;
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -40,12 +55,32 @@ h2, p  {
 	font-size:smaller;
 	font-family:monospace;
 }
+
+#box2 p {
+	white-space:pre;
+	font-size:smaller;
+	font-family:monospace;
+}
+
 </style>
 <title>Rounded Corner Boxes</title>
 </head>
 <body>
 <div id="box1">
-	<h2>Example 1</h2>
+	<h2>Gator Corner Dining</h2>
+	<form>
+	<label for="gdRating">Rating (between 1 and 5):</label>
+	<input type="number" id="gdRating" name="gdRating" min="1" max="5">
+  </form>
+</div>
+
+<div id="box2">
+	<h2>Broward Dining Hall</h2>
+	<form>
+	<label for="bRating">Rating (between 1 and 5):</label>
+	<input type="number" id="bRating" name="bRating" min="1" max="5">
+  </form>
 </div>
 </body>
 </html>
+
