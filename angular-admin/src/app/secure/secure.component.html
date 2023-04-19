@@ -8,83 +8,47 @@
 
 
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="secure.component.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<style type="text/css">
-body {
-	margin:10px;
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif
-}
-
-#box1, #box2{
-	width:200px;
-	height:200px;
-	margin:10px;
-	padding:10px;
-}
-
-#box1 {
-	background:	#6070ff;
-  border-radius: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  width: 50em;
-  min-height: 25em;
-  position: relative;
-}
-
-#box2 {
-	background:	#ffaf47;
-  border-radius: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  width: 50em;
-  min-height: 25em;
-  position: relative;
-}
-
-h2, p  {
-	padding:5px;
-}
-
-#box1 p {
-	white-space:pre;
-	font-size:smaller;
-	font-family:monospace;
-}
-
-#box2 p {
-	white-space:pre;
-	font-size:smaller;
-	font-family:monospace;
-}
-
-</style>
-<title>Rounded Corner Boxes</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="secure.component.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
 <div id="box1">
 	<h2>Gator Corner Dining</h2>
 	<form>
-	<label for="gdRating">Rating (between 1 and 5):</label>
-	<input type="number" id="gdRating" name="gdRating" min="1" max="5">
-  </form>
-
-  	<form>
-	<input type="image" src="star.png" alt="Star" width="50" height="50">
+		<label for="gdRating">Rating (between 1 and 5):</label>
+		<input type="number" id="gdRating" name="gdRating" min="1" max="5">
 	</form>
+
+	<div id="star-container">
+		<!--<form>
+		<input type="image" src="./assets/star.png" alt="Star" width="50" height="50">
+		</form>-->
+
+		<div class="rate">
+			<input type="radio" id="star5" name="rate" value="5" />
+			<label for="star5" title="text">5 stars</label>
+			<input type="radio" id="star4" name="rate" value="4" />
+			<label for="star4" title="text">4 stars</label>
+			<input type="radio" id="star3" name="rate" value="3" />
+			<label for="star3" title="text">3 stars</label>
+			<input type="radio" id="star2" name="rate" value="2" />
+			<label for="star2" title="text">2 stars</label>
+			<input type="radio" id="star1" name="rate" value="1" />
+			<label for="star1" title="text">1 star</label>
+		</div>
+	</div>
 </div>
 
 <div id="box2">
 	<h2>Broward Dining Hall</h2>
 	<form>
-	<label for="bRating">Rating (between 1 and 5):</label>
-	<input type="number" id="bRating" name="bRating" min="1" max="5">
-  </form>
+		<label for="bRating">Rating (between 1 and 5):</label>
+		<input type="number" id="bRating" name="bRating" min="1" max="5">
+	</form>
 </div>
+
 </body>
 </html>
 
