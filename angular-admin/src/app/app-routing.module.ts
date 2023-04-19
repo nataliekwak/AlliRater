@@ -9,8 +9,8 @@ import { DashboardComponent } from './secure/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path: '', component: SecureComponent,
-children: [
-  {path: '', component: DashboardComponent},
+children: [ 
+  {path: '', component:DashboardComponent},
   {path: 'profile', component: ProfileComponent}
 ]},
   {path: '', 

@@ -6,6 +6,8 @@ import { SecureComponent } from './secure.component';
 import { RouterModule } from '@angular/router';
 import { StarRatingComponent } from '../public/star-rating/star-rating.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -14,15 +16,14 @@ import { FormsModule } from '@angular/forms';
     StarRatingComponent,
     NavComponent,
     MenuComponent,
-    SecureComponent
+    SecureComponent,
+    DashboardComponent
   ],
   imports: [
+    BrowserModule,
     CommonModule,
     RouterModule,
     FormsModule
-  ],
-  exports: [
-    StarRatingComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
