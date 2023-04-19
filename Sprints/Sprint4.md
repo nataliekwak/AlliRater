@@ -22,11 +22,9 @@ Finally, give an overview of your completed project as if you were pitching it t
 
 Script:
 [walk into dining hall] "Have you ever wanted to grab a bite to eat from the dining hall...
-but you're not sure if today's meal is accurate according to the website AND actually tastes good?
+but you're not actually sure it tastes good?
 
-[Swiping card] "You definitely don't want to waste your valuable swipes, "
-
-[Scractching head at wrong food] "Or find out the food you wanted isn't what you thought it would be"
+[Swiping card] "You definitely don't want to waste your valuable swipes,"
 
 "Introducing..." ALLIRATER (music?)
 "A new and improved way of finding out what your peers thought of today's meal!"
