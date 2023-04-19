@@ -1,3 +1,9 @@
 sidebarMenu {
     background-color: pink;
 }
+
+.nav-item .nav-link {
+
+    color: white;
+  
+  }
