@@ -5,9 +5,10 @@ import { MenuComponent } from './menu/menu.component';
 import { SecureComponent } from './secure.component';
 import { RouterModule } from '@angular/router';
 import { StarRatingComponent } from '../public/star-rating/star-rating.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -17,13 +18,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     NavComponent,
     MenuComponent,
     SecureComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule, 
+    ReactiveFormsModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
