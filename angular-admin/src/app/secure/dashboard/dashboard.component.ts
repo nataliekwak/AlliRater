@@ -11,9 +11,8 @@ import { NgIf } from '@angular/common';
 })
 export class DashboardComponent implements OnInit{
   user: User;
-  value: string;
-  value1: string;
-  value2: string;
+  value = "not rated yet";
+  value2 = "not rated yet";
   num: number;
   sum = 0;
   count = 0;
