@@ -11,33 +11,39 @@ import { User } from 'src/app/interfaces/user';
 export class DashboardComponent implements OnInit{
   user: User;
   value: string;
+  value1: string;
+  value2: string;
   num: number;
   sum = 0;
   count = 0;
+  sum2 = 0;
+  count2 = 0;
   constructor(
     private authService: AuthService,
     private router: Router
     ){ }
 
     templateForm(value: string) {
-      console.log(value);
-      //alert(JSON.stringify(value));
-      this.value = JSON.stringify(value);
-      this.value = this.value.substring(9,10)
-      this.sum += Number(this.value)
-      this.count += 1;
-      this.value = JSON.stringify(this.sum/this.count)
-      //console.log(value[0])
+        console.log(value);
+        //alert(JSON.stringify(value));
+        this.value = JSON.stringify(value);
+        this.value = this.value.substring(9,10)
+        this.sum += Number(this.value)
+        this.count += 1;
+        this.value = JSON.stringify(this.sum/this.count)
+        //console.log(value[0])
     }
 
     templateForm2(value: string) {
       console.log(value);
       //alert(JSON.stringify(value));
-      this.value = JSON.stringify(value);
-      this.value = this.value.substring(9,10)
-      this.sum += Number(this.value)
-      this.count += 1;
-      this.value = JSON.stringify(this.sum/this.count)
+      this.value2 = JSON.stringify(value);
+      console.log(this.value2)
+      this.value2 = this.value2.substring(10,11)
+      console.log(this.value2)
+      this.sum2 += Number(this.value2)
+      this.count2 += 1;
+      this.value2 = JSON.stringify(this.sum2/this.count2)
       //console.log(value[0])
     }
 
