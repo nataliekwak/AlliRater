@@ -1,4 +1,6 @@
 <app-nav [user]="user"></app-nav>
+
+
 <!DOCTYPE HTML>
 <html>
 
@@ -13,11 +15,9 @@
 
 <body>
 <div id="box1">
-	<h2>Gator Corner Dining</h2>
-	<form>
-		<label for="gdRating">Rating (between 1 and 5):</label>
-		<input type="number" id="gdRating" name="gdRating" min="1" max="5">
-	</form>
+	<h1>Gator Corner Dining</h1>
+
+	<h4>How was the Gator Corner Dining Hall on this Wednesday Afternoon?</h4>
 
 	<div id="star-container">
 		<!--<form>
@@ -45,37 +45,61 @@
 			</div>
 		</form>
 	</div>
+
+	<pre>
+
+
+
+
+	</pre>
+
+
+	<h4>The Average Rating of Gator Corner Dining hall during this time is RATING</h4>
+
 </div>
 
 <div id="box2">
-	<h2>Broward Dining Hall</h2>
-	<form>
-		<label for="gdRating">Rating (between 1 and 5):</label>
-		<input type="number" id="gdRating" name="gdRating" min="1" max="5">
-	</form>
+	<h1>Broward Dining Hall</h1>
+	
+	<h4>How was the Broward Dining Hall on this Wednesday Afternoon?</h4>
 
 	<div id="star-container">
-	<form #myForm="ngForm" (submit)="templateForm(myForm.value)" novalidate>
-		<div class="rate">
-			<input id="star5" type="radio" class="custom-control-input" value="5" name="rate" ngModel />
-			<label class="custom-control-label" for="star5" title="text">5 stars</label>
-			<input type="radio" id="star4" name="rate" value="4" ngModel/>
-			<label for="star4" title="text">4 stars</label>
-			<input type="radio" id="star3" name="rate" value="3" ngModel/>
-			<label for="star3" title="text">3 stars</label>
-			<input type="radio" id="star2" name="rate" value="2" ngModel />
-			<label for="star2" title="text">2 stars</label>
-			<input type="radio" id="star1" name="rate" value="1" ngModel />
-			<label for="star1" title="text">1 star</label>
+    <form #myForm2="ngForm" (submit)="templateForm2(myForm2.value)" novalidate>
+      <div class="rate2">
+        <input id="_star5" type="radio" value="5" name="rate2" ngModel />
+        <label for="_star5" title="text">5 stars</label>
+        <input type="radio" id="_star4" name="rate2" value="4" ngModel/>
+        <label for="_star4" title="text">4 stars</label>
+        <input type="radio" id="_star3" name="rate2" value="3" ngModel/>
+        <label for="_star3" title="text">3 stars</label>
+        <input type="radio" id="_star2" name="rate2" value="2" ngModel />
+        <label for="_star2" title="text">2 stars</label>
+        <input type="radio" id="_star1" name="rate2" value="1" ngModel />
+        <label for="_star1" title="text">1 star</label>
 		</div>
 		<div>
 		<button type="submit" class="btn btn-danger btn-lg btn-block">Submit Rating</button>
 		</div>
+    <div>
+      <label>{{this.value}}</label>
+    </div>
 	</form>
 	</div>
+
+	<pre>
+
+
+
+
+	</pre>
+
+
+	<h4>The Average Rating of Broward Dining hall during this time is RATING</h4>
+
 </div>
 
 </body>
 </html>
+
 
 

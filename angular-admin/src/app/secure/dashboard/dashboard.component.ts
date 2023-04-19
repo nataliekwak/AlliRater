@@ -30,6 +30,17 @@ export class DashboardComponent implements OnInit{
       //console.log(value[0])
     }
 
+    templateForm2(value: string) {
+      console.log(value);
+      //alert(JSON.stringify(value));
+      this.value = JSON.stringify(value);
+      this.value = this.value.substring(9,10)
+      this.sum += Number(this.value)
+      this.count += 1;
+      this.value = JSON.stringify(this.sum/this.count)
+      //console.log(value[0])
+    }
+
   ngOnInit(): void{
     this.authService.user().subscribe(
       user => this.user = user,
