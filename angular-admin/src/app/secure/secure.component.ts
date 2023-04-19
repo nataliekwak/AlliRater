@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class SecureComponent implements OnInit{
   user: User;
+  avg: number;
   
   constructor(
     private authService: AuthService,
