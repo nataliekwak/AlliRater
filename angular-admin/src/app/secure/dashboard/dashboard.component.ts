@@ -30,7 +30,7 @@ export class DashboardComponent implements OnInit{
         this.value = this.value.substring(9,10)
         this.sum += Number(this.value)
         this.count += 1;
-        this.value = JSON.stringify(this.sum/this.count)
+        this.value = JSON.stringify(Math.round(this.sum/this.count*10)/10)
         //console.log(value[0])
     }
 
@@ -41,7 +41,7 @@ export class DashboardComponent implements OnInit{
       this.value2 = this.value2.substring(10,11)
       this.sum2 += Number(this.value2)
       this.count2 += 1;
-      this.value2 = JSON.stringify(this.sum2/this.count2)
+      this.value2 = JSON.stringify(Math.round(this.sum2/this.count2*10)/10)
       //console.log(value[0])
     }
 
