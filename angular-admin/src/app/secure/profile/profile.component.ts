@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormBuilder} from '@angular/forms';
 import { AuthService } from 'src/app/services/auth.service';
+import { Auth } from 'src/app/classes/auth';
 
 @Component({
   selector: 'app-profile',
@@ -23,6 +24,11 @@ export class ProfileComponent {
       email: '',
     });
 
+    Auth.userEmitter.subscribe(
+      user => {
+        this.infoForm.patchValue(user);
+      });
+
     this.passwordForm = this.formsBuilder.group({
       password: '',
       password_confirm:''
@@ -32,7 +38,7 @@ export class ProfileComponent {
 
   infoSubmit(): void{
     this.authService.updateInfo(this.infoForm.getRawValue()).subscribe(
-      res => console.log(res)
+      user => Auth.userEmitter.emit(user)
     );
 
     }
