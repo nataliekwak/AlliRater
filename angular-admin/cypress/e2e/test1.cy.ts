@@ -1,6 +1,6 @@
 describe('Webpage Test', () => {
   it('Test\'s all functional domains', () => {
-    cy.visit('http://localhost:4200/')
+    cy.visit('localhost:4200')
 
     cy.contains('Dashboard').click()
 
