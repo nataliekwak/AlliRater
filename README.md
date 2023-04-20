@@ -28,7 +28,7 @@ ng serve
 ```
 You can browse to the site by instead running ```ng serve --open``` or navigating to ```http://localhost:4200/``` after the previous step.
 
-Using Node v18.15.0, npm 9.6.2, and Angular 15.2.6
+Using Node v18.15.0, npm v9.6.2, and Angular v15.2.6
 
 -----------------------------
 
