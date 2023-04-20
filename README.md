@@ -14,7 +14,7 @@ UF students can rate the meal they just had at the dining hall using AlliRater. 
 
 Want to see AlliRater on your own machine? 
 Make sure to have Node.js installed and your favorite text editor.
-Simply open an integrated terminal on the angular-admin folder and perform the following commands:
+Simply open an integrated terminal on the angular-admin folder and perform the following commands in order:
 ```
 npm install
 ```
