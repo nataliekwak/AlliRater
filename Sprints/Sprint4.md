@@ -6,6 +6,14 @@
     - 
 **List frontend unit and Cypress tests**
 
+-The designated homepage will be examined for the presence and visibility of the dashboard button. An assessment of the website's layout will be conducted to ensure that the button is prominently displayed and easily identifiable
+
+-Upon confirming the presence of the dashboard button, it will be tested for functionality by clicking on it. The dashboard page will be thoroughly analyzed to ensure that any updates made to the homepage are promptly displayed, as expected. It will verify that the updated dashboard page’s url is ‘/#’
+
+-The login page will be accessed to confirm its presence and accessibility. It will be verified that the login page's URL is '/login'
+
+-The register page will be accessed to confirm its presence and accessibility. It will be verified that the register page's URL is '/register'
+
 **List backend unit tests**
 
 **Show updated documentation for your backend API** 
