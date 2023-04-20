@@ -34,7 +34,7 @@ Using Node v18.15.0, npm v9.6.2, and Angular v15.2.6
 
 ## COMMON ERRORS
 
-When trying to run ng serve on ```angular-admin``` for the first time, you are most likely going to encounter an error similar to the following: ```Error: Can't resolve 'node_modules/material-design-icons/iconfont/material-icons.css' in '/home/jeffk/code/AlliRater/angular-admin'```
+When trying to run ng serve on ```angular-admin``` for the first time, you are most likely going to encounter an error similar to the following: ```Error: Can't resolve 'node_modules/material-design-icons/iconfont/material-icons.css' in '.../code/AlliRater/angular-admin'```
 
 To resolve this:
 Open an integrated terminal on the angular-admin folder (or change the directory to the angular-admin folder: ```cd .../AlliRater/angular-admin``` ) if not already there. Run the following command in the terminal:
@@ -74,4 +74,4 @@ Make changes to the file so that you have single quotes wrapping each url as suc
 }
 ```
 
-Save the file and try running ```ng serve``` again.
+Save the file and try running ```ng serve``` again. Open the app by browsing to ```http://localhost:4200/```.
