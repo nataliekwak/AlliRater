@@ -26,5 +26,52 @@ Start the site by running:
 ```
 ng serve 
 ```
-You can browse to the site by instead running ```ng serve --open``` or navigating to ```http://localhost:4200``` after the previous step.
+You can browse to the site by instead running ```ng serve --open``` or navigating to ```http://localhost:4200/``` after the previous step.
 
+Using Node v18.15.0, npm 9.6.2, and Angular 15.2.6
+
+-----------------------------
+
+## COMMON ERRORS
+
+When trying to run ng serve on ```angular-admin``` for the first time, you are most likely going to encounter an error similar to the following: ```Error: Can't resolve 'node_modules/material-design-icons/iconfont/material-icons.css' in '/home/jeffk/code/AlliRater/angular-admin'```
+
+To resolve this:
+Open an integrated terminal on the angular-admin folder (or change the directory to the angular-admin folder: ```cd .../AlliRater/angular-admin``` ) if not already there. Run the following command in the terminal:
+```
+npm install material-design-icons-iconfont
+```
+
+After that navigate to and open the following file to edit: ```.../AlliRater/angular-admin/mode_modules/material-design-icons/iconfont/material-icons.css```
+
+The first 11 lines of this file should read:
+```
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local(Material Icons),
+       local(MaterialIcons-Regular),
+       url(MaterialIcons-Regular.woff2) format('woff2'),
+       url(MaterialIcons-Regular.woff) format('woff'),
+       url(MaterialIcons-Regular.ttf) format('truetype');
+}
+```
+
+Make changes to the file so that you have single quotes wrapping each url as such:
+```
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url('MaterialIcons-Regular.woff2') format('woff2'),
+       url('MaterialIcons-Regular.woff') format('woff'),
+       url('MaterialIcons-Regular.ttf') format('truetype');
+}
+```
+
+Save the file and try running ```ng serve``` again.
