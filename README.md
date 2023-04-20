@@ -5,12 +5,12 @@ UF students can rate the meal they just had at the dining hall using AlliRater. 
 
 ![demo-gif](./demo.gif)
 
-- Natalie Kwak, Macguire McDuff, Brenda Nakasone, Lauren Nunag
+**Created by:** Natalie Kwak, Macguire McDuff, Brenda Nakasone, Lauren Nunag
 
 
 -----------------------------
 
-**INSTALLATION INSTRUCTIONS**
+## INSTALLATION INSTRUCTIONS
 
 Want to see AlliRater on your own machine? 
 Make sure to have Node.js installed and your favorite text editor.
