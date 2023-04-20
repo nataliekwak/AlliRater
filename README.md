@@ -42,7 +42,7 @@ Open an integrated terminal on the angular-admin folder (or change the directory
 npm install material-design-icons-iconfont
 ```
 
-After that navigate to and open the following file to edit: ```.../AlliRater/angular-admin/mode_modules/material-design-icons/iconfont/material-icons.css```
+Next, navigate to and open the following file to edit: ```.../AlliRater/angular-admin/mode_modules/material-design-icons/iconfont/material-icons.css```
 
 The first 11 lines of this file should read:
 ```
