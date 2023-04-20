@@ -26,5 +26,5 @@ Start the site by running:
 ```
 ng serve 
 ```
-You can browse to the site by instead running ```ng serve --open`` or navigating to ```http://localhost:4200``` after the previous step.
+You can browse to the site by instead running ```ng serve --open``` or navigating to ```http://localhost:4200``` after the previous step.
 
